@@ -1,0 +1,1 @@
+[{"input":"3\n1 0 10\n2 0 10\n1 10 0\n","output":"LIVE\nDEAD\n"},{"input":"4\n1 0 10\n2 0 10\n2 6 4\n2 10 0\n","output":"DEAD\nLIVE\n"},{"input":"2\n1 5 5\n2 6 4\n","output":"LIVE\nLIVE\n"},{"input":"4\n1 0 10\n2 0 10\n1 6 4\n1 6 4\n","output":"DEAD\nDEAD\n"},{"input":"2\n1 10 0\n2 10 0\n","output":"LIVE\nLIVE\n"}]

@@ -1,0 +1,1 @@
+[{"input":"[\"cha\",\"r\",\"act\",\"ers\"]","output":"6\n"},{"input":"[\"un\",\"iq\",\"ue\"]","output":"4\n"},{"input":"[\"abcdefghijklmnopqrstuvwxyz\"]","output":"26\n"}]

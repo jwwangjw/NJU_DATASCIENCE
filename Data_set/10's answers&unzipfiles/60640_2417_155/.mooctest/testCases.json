@@ -1,0 +1,1 @@
+[{"input":"12,5,7,23","output":"True\n"},{"input":"5,4,3,2,1","output":"True\n"},{"input":"1,3,5,7,9","output":"True\n"},{"input":"29,6,10","output":"True\n"},{"input":"3,6","output":"False\n"}]

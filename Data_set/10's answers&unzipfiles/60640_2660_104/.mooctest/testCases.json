@@ -1,0 +1,1 @@
+[{"input":"8\nT a\nT b\nT c\nT d\nU 1\nQ 3\nT c\nQ 3","output":"c\nc\n"},{"input":"10\nT a\nT b\nT c\nT d\nQ 1\nQ 2\nQ 3\nQ 4\nT c\nQ 5","output":"a\nb\nc\nd\nc\n"},{"input":"7\nT a\nT b\nT c\nU 1\nQ 1\nT c\nQ 3","output":"a\nc\n"},{"input":"7\nT a\nT b\nT c\nQ 2\nU 2\nT c\nQ 2","output":"b\nc\n"},{"input":"6\nT a\nT b\nT c\nQ 1\nT c\nQ 3","output":"a\nc\n"}]

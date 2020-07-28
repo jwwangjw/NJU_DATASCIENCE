@@ -1,0 +1,1 @@
+[{"input":"cb\nbc","output":"cb\n"},{"input":"cbfgh\nbcfgh","output":"cbfgh\n"},{"input":"cbf\nbcf","output":"cbf\n"},{"input":"cba\nabc","output":"cba\n"},{"input":"cbfg\nbcfg","output":"cbfg\n"}]

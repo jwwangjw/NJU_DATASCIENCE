@@ -1,0 +1,1 @@
+[{"input":"[\"a\",\"ab\",\"abc\",\"d\",\"cd\",\"bcd\",\"abcd\"]","output":"4\n"},{"input":"[\"abcw\",\"baz\",\"foo\",\"bar\",\"xtfn\",\"abcdef\"]","output":"16\n"},{"input":"[\"a\",\"aa\",\"aaa\",\"aaaa\"]","output":"0\n"}]

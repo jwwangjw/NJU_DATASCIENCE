@@ -1,0 +1,1 @@
+[{"input":"5\n1 1 3 2\nabbaa","output":"1 5 4 2 3 "},{"input":"6\n1 1 2 3 3\nabdaca","output":"1 4 6 2 5 3 "},{"input":"5\n1 1 3 2\nabcde","output":"1 2 3 4 5 "},{"input":"5\n1 1 3 2\nabdac","output":"1 4 2 5 3 "},{"input":"5\n1 1 2 3\nabdac","output":"1 4 2 5 3 "},{"input":"6\n1 1 2 3 4\nabdaca","output":"1 6 4 2 5 3 "}]

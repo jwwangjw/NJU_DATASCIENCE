@@ -1,0 +1,1 @@
+[{"input":"5\n917\n109\n51\n102\n893","output":"Yes\nNo\nYes\nNo\nNo\n"},{"input":"5\n917\n109\n51\n105\n893","output":"Yes\nNo\nYes\nYes\nNo\n"},{"input":"5\n917\n109\n51\n103\n893","output":"Yes\nNo\nYes\nNo\nNo\n"},{"input":"5\n917\n109\n51\n104\n893","output":"Yes\nNo\nYes\nNo\nNo\n"},{"input":"5\n917\n101\n51\n102\n893","output":"Yes\nYes\nYes\nNo\nNo\n"}]

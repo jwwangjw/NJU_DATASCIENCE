@@ -1,0 +1,1 @@
+[{"input":"2\nI am IronnorI Ma, i\nAbBa","output":"YES\nYES\n"},{"input":"2\nI am IronnorI Ma, i\nAbgBa","output":"YES\nYES\n"},{"input":"2\nI am :IronnorI Ma, i\nAb?/Ba","output":"YES\nYES\n"},{"input":"2\nI am IronnorI Ma, i\nAb?/Ba","output":"YES\nYES\n"}]

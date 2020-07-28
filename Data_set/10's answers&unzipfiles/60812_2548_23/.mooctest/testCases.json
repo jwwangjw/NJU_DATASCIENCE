@@ -1,0 +1,1 @@
+[{"input":"2\naabacbebebeaa\n3\naaa\n1","output":"8\n3\n"},{"input":"2\naabacbebebeaa\n3\naa\n1","output":"8\n2\n"},{"input":"2\naabacbebebeaa\n3\naaaa\n1","output":"8\n4\n"},{"input":"2\naabacbebebe\n3\naaaa\n1","output":"7\n4\n"},{"input":"2\naabacbebebeaa\n3\na\n1","output":"8\n1\n"}]

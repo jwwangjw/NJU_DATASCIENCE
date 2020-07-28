@@ -1,0 +1,1 @@
+[{"input":"2\npcbhdbjcvhjsdjhv\nabcdapzfqh","output":"6\n6\n"},{"input":"2\npcbhdbjcvhjsdjhvczv\nabcdapzfqh","output":"7\n6\n"},{"input":"2\npcbhdbjcvhjsdjhv\nabcda","output":"6\n4\n"},{"input":"2\npcbhdbjcvhjsdjhv\nabc","output":"6\n3\n"},{"input":"2\npcbhdbjcvhjsdjhvczvd\nabcdapzfqh","output":"7\n6\n"}]

@@ -1,0 +1,1 @@
+[{"input":"11\nsdsxxczasds","output":"81\n"},{"input":"10\nbbaaabcaba","output":"38\n"},{"input":"9\nadsadsasd","output":"39\n"},{"input":"3\nads","output":"1\n"},{"input":"3\naba","output":"1\n"},{"input":"4\neeee","output":"1\n"}]

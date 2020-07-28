@@ -1,0 +1,1 @@
+[{"input":"aabababacbacbac","output":"0\n0\n0\n0\n0\n3\n10\n22\n22\n22\n22\n22\n26\n35\n50\n"},{"input":"aaaaaa","output":"0\n0\n2\n7\n19\n40\n"},{"input":"ababab","output":"0\n0\n0\n0\n3\n10\n"}]

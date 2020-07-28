@@ -1,0 +1,5 @@
+n = int(input())
+a = list(map(int, input().split()))
+m = max(a)
+s = sum(a)
+print("NO" if s % 2 or m * 2 > s else "YES")

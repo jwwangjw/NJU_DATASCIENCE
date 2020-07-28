@@ -1,0 +1,1 @@
+[{"input":"wqe xvc safsdb asdasd sda","output":"safsdb\n"},{"input":"one  twoasdsadsadasdsad  threeasda  four  five","output":"twoasdsadsadasdsad\n"},{"input":"a b c d e","output":"a\n"},{"input":"one  two  three  four  five","output":"three\n"},{"input":"wqe xvc safb asdasd sda","output":"asdasd\n"}]

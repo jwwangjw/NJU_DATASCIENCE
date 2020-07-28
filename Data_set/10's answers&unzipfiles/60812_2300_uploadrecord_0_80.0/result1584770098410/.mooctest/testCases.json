@@ -1,0 +1,1 @@
+[{"input":"abc##de#g##f###","output":"c b e g d f a "},{"input":"abc#hde#g##f###","output":"c e g d f h b a "},{"input":"abc##d##","output":"c b d a "},{"input":"abcd####","output":"d c b a "},{"input":"abc####","output":"c b a "}]

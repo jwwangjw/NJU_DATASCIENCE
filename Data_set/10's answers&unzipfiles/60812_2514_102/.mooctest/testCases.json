@@ -1,0 +1,1 @@
+[{"input":"axc\nahbgdc","output":"False\n"},{"input":"axb\nahxgdb","output":"True\n"},{"input":"abc\nahbgdc","output":"True\n"},{"input":"axb\nahxgsb","output":"True\n"},{"input":"axb\nahcgdc","output":"False\n"}]

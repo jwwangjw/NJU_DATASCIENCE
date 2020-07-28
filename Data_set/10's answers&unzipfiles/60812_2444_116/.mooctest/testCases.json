@@ -1,0 +1,1 @@
+[{"input":"nums \u003d [1,5,9,1,5,9], k \u003d 2, t \u003d 3","output":"false\n"},{"input":"nums \u003d [1,2,3,1], k \u003d 3, t \u003d 0","output":"true\n"},{"input":"nums \u003d [1,0,1,1], k \u003d 1, t \u003d 2","output":"true\n"}]

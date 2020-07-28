@@ -1,0 +1,1 @@
+[{"input":"2\nABCPQR\nADGJPRT","output":"RQP\nJGDA\n"},{"input":"2\nABCPQ\nADGJP","output":"CBA\nJGDA\n"},{"input":"2\nABCP\nADGJP","output":"CBA\nJGDA\n"},{"input":"2\nABCPQR\nADGJP","output":"RQP\nJGDA\n"},{"input":"2\nABCPQR\nADGJPR","output":"RQP\nJGDA\n"}]

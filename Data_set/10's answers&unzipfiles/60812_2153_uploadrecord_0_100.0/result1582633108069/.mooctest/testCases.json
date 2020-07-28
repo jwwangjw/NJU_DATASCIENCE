@@ -1,0 +1,1 @@
+[{"input":"-123","output":"-321\n"},{"input":"123","output":"321\n"},{"input":"120","output":"21\n"}]

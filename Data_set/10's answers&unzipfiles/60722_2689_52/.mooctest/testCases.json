@@ -1,0 +1,1 @@
+[{"input":"2\nabd xyc\nefz jgh","output":"6\n6\n"},{"input":"2\nabd xyc\nefzh jghi","output":"6\n7\n"},{"input":"2\nab xy\nefz jgh","output":"4\n6\n"},{"input":"2\nabcd xycd\nefgh jghi","output":"6\n6\n"}]

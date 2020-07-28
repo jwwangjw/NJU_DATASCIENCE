@@ -1,0 +1,1 @@
+[{"input":"2\n567432\n543267\n576342\n0","output":"YES\nNO\n"},{"input":"1\n453762\n345726\n0","output":"NO\n"},{"input":"2\n543267\n576342\n765432\n0","output":"NO\nNO\n"},{"input":"2\n453762\n475632\n435762\n0","output":"NO\nYES\n"},{"input":"3\n567432\n543267\n576342\n765432\n0","output":"YES\nNO\nNO\n"}]

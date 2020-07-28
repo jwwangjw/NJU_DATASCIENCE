@@ -1,0 +1,1 @@
+[{"input":"ABABABAB\nAB","output":"AB\n"},{"input":"ADOBECODEBANC\nABC","output":"BANC\n"},{"input":"ADBCADBC\nABC","output":"BCA\n"},{"input":"ADBCADBC\nACD","output":"CAD\n"},{"input":"ADBCADBC\nABD","output":"ADB\n"}]

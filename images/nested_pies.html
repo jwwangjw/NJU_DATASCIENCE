@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="f5bd356ed4e44d90b2637996c2884a98" style="width:800px; height:500px;"></div>
+    <script>
+        var chart_f5bd356ed4e44d90b2637996c2884a98 = echarts.init(
+            document.getElementById('f5bd356ed4e44d90b2637996c2884a98'), 'white', {renderer: 'canvas'});
+        var option_f5bd356ed4e44d90b2637996c2884a98 = {
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u603b\u4f53",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u7b5b\u9009\u7591\u4f3c\u9762\u5411\u7528\u4f8b",
+                    "value": 80
+                },
+                {
+                    "name": "\u5176\u4ed6",
+                    "value": 611
+                }
+            ],
+            "radius": [
+                0,
+                "30%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "inner",
+                "margin": 8,
+                "fontSize": 12
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "pie",
+            "name": "\u662f\u5426\u9762\u5411\u7528\u4f8b",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u9762\u5411\u7528\u4f8b\uff08\u8bc1\u5b9e\uff09",
+                    "value": 16
+                },
+                {
+                    "name": "\u975e\u9762\u5411\u7528\u4f8b",
+                    "value": 64
+                },
+                {
+                    "name": "\u5176\u4ed6",
+                    "value": 611
+                }
+            ],
+            "radius": [
+                "40%",
+                "55%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "outside",
+                "margin": 8,
+                "fontSize": 12,
+                "formatter": "{a|{a}}{abg|}\n{hr|}\n {b|{b}: }{c}  {per|{d}%}  ",
+                "backgroundColor": "#eee",
+                "borderColor": "#aaa",
+                "borderWidth": 1,
+                "borderRadius": 4,
+                "rich": {
+                    "a": {
+                        "color": "#999",
+                        "lineHeight": 22,
+                        "align": "center"
+                    },
+                    "abg": {
+                        "backgroundColor": "#e3e3e3",
+                        "width": "100%",
+                        "align": "right",
+                        "height": 22,
+                        "borderRadius": [
+                            4,
+                            4,
+                            0,
+                            0
+                        ]
+                    },
+                    "hr": {
+                        "borderColor": "#aaa",
+                        "width": "100%",
+                        "borderWidth": 0.5,
+                        "height": 0
+                    },
+                    "b": {
+                        "fontSize": 16,
+                        "lineHeight": 33
+                    },
+                    "per": {
+                        "color": "#eee",
+                        "backgroundColor": "#334455",
+                        "padding": [
+                            2,
+                            4
+                        ],
+                        "borderRadius": 2
+                    }
+                }
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u7b5b\u9009\u7591\u4f3c\u9762\u5411\u7528\u4f8b",
+                "\u5176\u4ed6",
+                "\u9762\u5411\u7528\u4f8b\uff08\u8bc1\u5b9e\uff09",
+                "\u975e\u9762\u5411\u7528\u4f8b"
+            ],
+            "selected": {},
+            "show": true,
+            "left": "right",
+            "orient": "vertical"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u9762\u5411\u7528\u4f8b\u6bd4\u4f8b"
+        }
+    ]
+};
+        chart_f5bd356ed4e44d90b2637996c2884a98.setOption(option_f5bd356ed4e44d90b2637996c2884a98);
+    </script>
+</body>
+</html>

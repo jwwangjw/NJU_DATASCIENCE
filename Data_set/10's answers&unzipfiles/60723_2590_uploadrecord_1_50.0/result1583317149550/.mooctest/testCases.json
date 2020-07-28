@@ -1,0 +1,1 @@
+[{"input":"3\njpmztf\nplkaitw\ngfuyg","output":"SHE!\nHE!\nHE!\n"},{"input":"3\njpmztf2wed\nplkaitwsd\ngfuyg","output":"HE!\nHE!\nHE!\n"},{"input":"3\njpmztf2wed\nplkaitw\ngfuyg","output":"HE!\nHE!\nHE!\n"},{"input":"3\njpmztf\nplkaitw\ngfuygq","output":"SHE!\nHE!\nSHE!\n"}]

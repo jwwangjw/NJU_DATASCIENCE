@@ -1,0 +1,1 @@
+[{"input":"RXXLRXRXL\nRXXLRXRXL","output":"True\n"},{"input":"RXXLRXRXL\nRXXLRrXXL","output":"False\n"},{"input":"RXXLRXRXL\nXRLXXRXLX","output":"False\n"},{"input":"RXXLRXRXL\nRXXLRXXXL","output":"False\n"},{"input":"RXXLRXRXL\nXRLXXRRLX","output":"True\n"}]

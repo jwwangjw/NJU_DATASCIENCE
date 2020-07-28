@@ -1,0 +1,1 @@
+[{"input":"6 100\njjooii\n3\n5 6 2\n4 6 1\n1 2 3","output":"joioji"},{"input":"6 100\njjooii\n3\n5 6 3\n4 6 1\n1 2 3","output":"joiojo"},{"input":"2 18\ncopypaste\n4\n3 6 8\n1 5 2\n4 12 1\n17 18 0","output":"ac"}]

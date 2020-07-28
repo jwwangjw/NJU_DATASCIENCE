@@ -1,0 +1,1 @@
+[{"input":"2\n5 10 30\n6 15 3","output":"0\n4\n"},{"input":"2\n25 100 30\n6 15 3","output":"3\n4\n"},{"input":"2\n5 10 3\n6 5 3","output":"2\n0\n"},{"input":"2\n25 10 30\n6 15 3","output":"0\n4\n"},{"input":"2\n5 10 30\n6 5 3","output":"0\n0\n"}]

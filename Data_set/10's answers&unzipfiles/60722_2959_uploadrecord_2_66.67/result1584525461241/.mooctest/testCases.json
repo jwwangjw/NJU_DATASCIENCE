@@ -1,0 +1,1 @@
+[{"input":"aabb\nbbaa","output":"10\n"},{"input":"asb\nbsa","output":"3\n"},{"input":"aabbcc\nbbaaccddvvbbaac","output":"27\n"},{"input":"a\nb","output":"0\n"},{"input":"a\nbsa","output":"1\n"},{"input":"aabbcc\nbbaacc","output":"15\n"}]

@@ -1,0 +1,1 @@
+[{"input":"3\n2 aa\n3 aba\n5 aabaa","output":"3\n"},{"input":"3\n2 aa\n3 aba\n5 aaaaa","output":"5\n"},{"input":"6\n2 aa\n3 aba\n3 aaa\n6 abaaba\n5 aaaaa\n4 abba","output":"14\n"},{"input":"4\n2 aa\n3 aba\n5 aabaa\n6 bababa","output":"4\n"},{"input":"5\n2 aa\n3 aba\n5 aabaa\n6 bababa\n4 abba","output":"5\n"}]

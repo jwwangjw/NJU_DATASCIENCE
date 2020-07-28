@@ -1,0 +1,1 @@
+[{"input":"3 4\nABCD\nBCDD\nCDEA\n5 4 12 10\n","output":"41\n"},{"input":"3 3\nABC\nCBA\nBCA\n3 4 5\n","output":"21\n"},{"input":"2 4\nABCD\nABCE\n1 2 3 4\n","output":"16\n"},{"input":"3 3\nABC\nBCD\nADA\n5 4 16\n","output":"30\n"},{"input":"3 3\nABC\nBCD\nCDE\n5 4 12\n","output":"21\n"}]

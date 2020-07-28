@@ -1,0 +1,1 @@
+[{"input":"2\n1 1\n2 2\n","output":"Poor Alex\n"},{"input":"5\n1 2\n2 3\n4 1\n7 6\n8 0\n","output":"Happy Alex\n"},{"input":"4\n1 2\n3 4\n5 6\n7 8\n","output":"Poor Alex\n"},{"input":"2\n1 2\n2 1\n","output":"Happy Alex\n"},{"input":"3\n1 3\n2 2\n3 4\n","output":"Happy Alex\n"}]

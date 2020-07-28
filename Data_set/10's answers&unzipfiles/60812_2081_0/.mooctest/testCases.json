@@ -1,0 +1,1 @@
+[{"input":"abcdabcabce\nabce","output":"1"},{"input":"fdseeeedf\nee","output":"3"},{"input":"abcdabcabce\nabc","output":"3"},{"input":"fdseeeedf\neeeeedf","output":"0"}]

@@ -1,0 +1,1 @@
+[{"input":"2\nsocks\nFoR","output":"3\n-1\n"},{"input":"2\nsocks4\nFoR","output":"3\n-1\n"},{"input":"2\nso4cks4\nFoR","output":"4\n-1\n"},{"input":"2\nso44cks4\nFoR44","output":"5\n0\n"},{"input":"2\nso44cks4\nFoR","output":"5\n-1\n"},{"input":"2\nso44cks4\nFoR443554","output":"5\n4\n"}]

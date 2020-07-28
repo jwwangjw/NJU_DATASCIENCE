@@ -1,0 +1,1 @@
+[{"input":"2\n5\nact cat tac god dog\n3\nact cat tac","output":"2 3\n3\n"},{"input":"2\n5\nact cat tac god dog\n3\nact cat dac","output":"2 3\n1 2\n"},{"input":"2\n5\nact cat tac god dog\n3\nact cad dac","output":"2 3\n1 2\n"},{"input":"2\n5\nact cat tac god dog\n3\nacd cad dac","output":"2 3\n3\n"}]

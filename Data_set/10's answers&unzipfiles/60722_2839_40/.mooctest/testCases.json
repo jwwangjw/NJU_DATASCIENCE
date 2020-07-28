@@ -1,0 +1,1 @@
+[{"input":"4\ntom\nlucius\nginny\nharry\n","output":"NO\nNO\nNO\nNO\n"},{"input":"5\na\na\na\na\na","output":"NO\nYES\nYES\nYES\nYES\n"},{"input":"6\ntom\nlucius\nginny\nharry\nginny\nharry\n","output":"NO\nNO\nNO\nNO\nYES\nYES\n"},{"input":"5\na\nb\nc\nd\ne\n","output":"NO\nNO\nNO\nNO\nNO\n"},{"input":"3\na\na\na\n","output":"NO\nYES\nYES\n"}]

@@ -1,0 +1,1 @@
+[{"input":"2\ngeeksforgeeks\nset\nadcffaet\nonkl","output":"e\n$\n"},{"input":"2\ngeeksforgeeks\nkot\nadcffaet\nonklg","output":"k\n$\n"},{"input":"2\ngeeksforgeeks\nkot\nadcffaet\nonklgt","output":"k\nt\n"},{"input":"2\ngeeksforgeeks\nkot\nadcffaet\nonkl","output":"k\n$\n"},{"input":"2\ngeeksforgeeks\nsot\nadcffaet\nonkl","output":"s\n$\n"}]

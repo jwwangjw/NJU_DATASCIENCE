@@ -1,0 +1,1 @@
+[{"input":"This is a book. \nI  i d","output":"This dis a book. \n"},{"input":"This is a book. \nR   w i ","output":"no exist\nThis is a book. \n"},{"input":"This is a book. \nR   t i ","output":"no exist\nThis is a book. \n"},{"input":"This is a book. \nD  s","output":"Thi is a book. \n"},{"input":"This is a book. \nR  i 2","output":"Th2s 2s a book. \n"}]

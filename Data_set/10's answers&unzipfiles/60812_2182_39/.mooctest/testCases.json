@@ -1,0 +1,1 @@
+[{"input":"2\n200 7\n99 65","output":"193\n17\n"},{"input":"2\n96 5\n41 3","output":"27\n31\n"},{"input":"3\n2 1\n4 2\n50 10","output":"2\n1\n36\n"},{"input":"2\n4 3\n9 6","output":"1\n7\n"},{"input":"2\n200 6\n1 1","output":"94\n1\n"}]

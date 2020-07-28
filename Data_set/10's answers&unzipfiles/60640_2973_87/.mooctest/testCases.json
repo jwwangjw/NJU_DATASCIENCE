@@ -1,0 +1,1 @@
+[{"input":"qwerttttt\n1\nqwertttt","output":"1\n"},{"input":"qwetrrrrrrrs\n1\nqtewrrrs","output":"0\n"},{"input":"aaaabbbbaabbcccc\n2\naaaabbbb\nabcabccc","output":"4\n"}]

@@ -1,0 +1,1 @@
+[{"input":"123\nabc","output":"123abc\n"},{"input":"123\nabc1asdsadsad","output":"123abc1asdsadsad\n"},{"input":"a\n~","output":"a~\n"},{"input":"\u003csvg/onload\n\u003dalert(1)\u003e//","output":"\u003csvg/onload\u003dalert(1)\u003e//\n"},{"input":"dafdsafdsfdsf\n1","output":"dafdsafdsfdsf1\n"}]

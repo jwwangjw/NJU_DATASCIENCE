@@ -1,0 +1,1 @@
+[{"input":"2\n12\n13","output":"21\n28\n"},{"input":"2\n2\n13","output":"1\n28\n"},{"input":"2\n12\n14","output":"21\n37\n"},{"input":"2\n22\n13","output":"351\n28\n"}]

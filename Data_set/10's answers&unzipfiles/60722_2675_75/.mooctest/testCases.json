@@ -1,0 +1,1 @@
+[{"input":"3\n6\n66\n666","output":"3\n33\n333\n"},{"input":"3\n6\n16\n666","output":"3\n3\n333\n"},{"input":"3\n6\n16\n556","output":"3\n3\n3\n"},{"input":"3\n6\n606\n556","output":"3\n303\n3\n"}]

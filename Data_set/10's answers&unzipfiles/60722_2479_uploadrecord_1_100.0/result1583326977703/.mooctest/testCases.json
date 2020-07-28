@@ -1,0 +1,1 @@
+[{"input":"1\nccharacters1\nalphabets","output":"1bclpr\n\n"},{"input":"1\nccharacters\nalphabets","output":"bclpr\n\n"},{"input":"1\ncharacters\nalphabets","output":"bclpr\n\n"},{"input":"1\nccharacters1\nalphabets1","output":"bclpr\n\n"}]

@@ -1,0 +1,1 @@
+[{"input":"3\nTUT-GLOP-143857\n3-12-10-10\n310-1010","output":"No duplicates."},{"input":"3\nTUT-GLOP\n3-10-10-10\n310-1010","output":"310-1010 2\n"},{"input":"5\nTUT-GLOP\n3-10-10-10\n310-1010\n3-1-0-1010\n3101-010","output":"310-1010 4\n"},{"input":"3\nTUT-GLOP-143857\nTUT-GLOP1-143857\n310-1010","output":"No duplicates."}]

@@ -1,0 +1,1 @@
+[{"input":"1\n4 a\na b c d\na 0 1 1 0\nb 1 0 1 0\nc 1 1 0 1\nd 0 0 1 0","output":"a b c d\n"}]

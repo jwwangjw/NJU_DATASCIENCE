@@ -1,0 +1,1 @@
+[{"input":"2\n3\n15","output":"Player A\nPlayer A\n"},{"input":"2\n32\n15","output":"Player B\nPlayer A\n"},{"input":"2\n32\n152","output":"Player B\nPlayer B\n"},{"input":"2\n321\n152","output":"Player A\nPlayer B\n"}]

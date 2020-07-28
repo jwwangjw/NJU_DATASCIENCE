@@ -1,0 +1,1 @@
+[{"input":"2\nabcdec\ncdefead","output":"noway\n"},{"input":"2\nbafbagca\nbdbgb","output":"a0\nb1\nc2\nd*\nf+\ng\u003d\n"},{"input":"2\nabcdec\ncdefe","output":"a6\nb*\nd\u003d\nf+\n"},{"input":"2\nabcde\nabcd","output":"noway\n"}]

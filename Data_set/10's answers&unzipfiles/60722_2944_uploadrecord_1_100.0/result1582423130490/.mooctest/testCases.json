@@ -1,0 +1,1 @@
+[{"input":"((((((((((25+x)*(a*(a+b+b))))))))))@","output":"NO"},{"input":"2*(x+y)/(1-x)@","output":"YES"},{"input":"(25+x)*(a*(a+b+b)@","output":"NO"},{"input":"()()@","output":"YES"},{"input":"(1+2)*((1+2)+1)@","output":"YES"}]

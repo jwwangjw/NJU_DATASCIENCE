@@ -1,0 +1,1 @@
+[{"input":"cde\n211\nigd","output":"211\ncde\nigd\n"},{"input":"_asb\nasdsadasxcz\nLsa2_2","output":"Lsa2_2\n_asb\nasdsadasxcz\n"},{"input":"aBc\nabc\nAbc","output":"Abc\naBc\nabc\n"},{"input":"cde\nafg\nabc","output":"abc\nafg\ncde\n"},{"input":"xczasdsad\nXsad+\nXsad1+2","output":"Xsad+\nXsad1+2\nxczasdsad\n"}]

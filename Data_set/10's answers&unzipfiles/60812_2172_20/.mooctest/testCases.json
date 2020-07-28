@@ -1,0 +1,1 @@
+[{"input":"1\nA*(B+C)/D","output": "ABC+*D/\n"},{"input": "1\nA*(T+C)/D","output": "ATC+*D/\n"},{"input": "2\na+b*(c^d-e)^(f+g*h)-j\nA*(B+C)/D","output": "abcd^e-fgh*+^*+j-\nABC+*D/\n"},{"input": "2\na+b*(c^d-e)^(f+g*h)-i\nA*(B+C)/D","output": "abcd^e-fgh*+^*+i-\nABC+*D/\n"},{"input": "1\na+b*(c^d-e)^(f+g*h)-i","output": "abcd^e-fgh*+^*+i-\n"}]

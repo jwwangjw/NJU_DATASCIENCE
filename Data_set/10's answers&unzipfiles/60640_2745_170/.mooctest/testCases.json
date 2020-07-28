@@ -1,0 +1,1 @@
+[{"input":"hit\ncoc\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]","output":"[]\n"},{"input":"hit\ncog\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]","output":"[]\n"},{"input":"hit\ncob\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]","output":"[]\n"},{"input":"hit\ncoa\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]","output":"[]\n"}]

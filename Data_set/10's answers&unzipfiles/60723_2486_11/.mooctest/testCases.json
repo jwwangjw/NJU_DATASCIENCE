@@ -1,0 +1,1 @@
+[{"input":"2\n2[ba]\n3[b2[da]]","output":"baba\nbdadabdadabdada\n"},{"input":"2\n2[b]\n3[b2[ca]]","output":"bb\nbcacabcacabcaca\n"},{"input":"2\n1[b]\n3[b2[ca]]","output":"b\nbcacabcacabcaca\n"},{"input":"2\n2[ba]\n3[b2[ca]]","output":"baba\nbcacabcacabcaca\n"},{"input":"2\n2[ba]\n3[b2[dwa]]","output":"baba\nbdwadwabdwadwabdwadwa\n"}]

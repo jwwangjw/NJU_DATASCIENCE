@@ -1,0 +1,1 @@
+[{"input":"2\n255\n30","output":"YES\nYES\n"},{"input":"2\n-255\n389","output":"YES\nNO\n"},{"input":"2\n255\n389","output":"YES\nNO\n"},{"input":"2\n255\n380","output":"YES\nYES\n"},{"input":"2\n2\n30","output":"NO\nYES\n"}]

@@ -1,0 +1,1 @@
+[{"input":"2\nabb\nabcab","output":"0\n1\n"},{"input":"2\nabbc\nabcab","output":"3\n1\n"},{"input":"2\nabbc\nabcabc","output":"3\n7\n"},{"input":"2\nabb\nabca","output":"0\n1\n"}]

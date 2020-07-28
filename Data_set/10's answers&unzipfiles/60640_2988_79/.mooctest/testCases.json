@@ -1,0 +1,1 @@
+[{"input":"6\nabcdef\n1","output":"abcdef\n"},{"input":"6\nabcdef\n6","output":"f\n"},{"input":"6\nabcdef\n5","output":"ef\n"},{"input":"6\nabcdef\n4","output":"def\n"},{"input":"6\nabcdef\n3","output":"cdef\n"}]

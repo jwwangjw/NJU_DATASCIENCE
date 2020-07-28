@@ -1,0 +1,1 @@
+[{"input":"0+1i\n0+1i","output":"-1+0i\n"},{"input":"1+1i\n1+1i","output":"0+2i\n"},{"input":"1+-1i\n1+-1i","output":"0+-2i\n"}]

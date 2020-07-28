@@ -1,0 +1,1 @@
+[{"input":"ba\nwedsvvv","output":"False\n"},{"input":"ab\neidbaooo","output":"True\n"},{"input":"abb\neidboaaa","output":"False\n"},{"input":"ab\neidboaoo","output":"False\n"},{"input":"ab\neidboaaa","output":"False\n"}]

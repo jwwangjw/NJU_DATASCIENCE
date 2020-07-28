@@ -1,0 +1,1 @@
+[{"input":"x\u003dx","output":"Infinite solutions\n"},{"input":"x\u003dx+2","output":"No solution\n"},{"input":"2x+3x-6x\u003dx+2","output":"x\u003d-1.0\n"},{"input":"2x\u003dx","output":"x\u003d0.0\n"},{"input":"x+5-3+x\u003d6+x-2","output":"x\u003d2.0\n"}]

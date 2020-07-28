@@ -1,0 +1,1 @@
+[{"input":"2\nxbce\nab","output":"-1\nab\n"},{"input":"2\nxabcef\nab","output":"ab abc abcef abcf abef abf ac acef acf aef af ef\nab\n"},{"input":"2\nxbcef\nab","output":"ef\nab\n"},{"input":"2\nxbce\nabll","output":"-1\nab abl abll al all\n"},{"input":"2\nxabcef\nabc","output":"ab abc abcef abcf abef abf ac acef acf aef af ef\nab abc ac\n"}]

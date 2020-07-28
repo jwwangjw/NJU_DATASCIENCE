@@ -1,0 +1,1 @@
+[{"input":"s \u003d \"kiss\", t \u003d \"kill\"","output":"false\n"},{"input":"s \u003d \"rat\", t \u003d \"car\"","output":"false\n"},{"input":"s \u003d \"anagram\", t \u003d \"nagaram\"","output":"true\n"},{"input":"s \u003d \"room\", t \u003d \"home\"","output":"false\n"},{"input":"s \u003d \"meat\", t \u003d \"meta\"","output":"true\n"}]

@@ -1,0 +1,1 @@
+[{"input":"2\n5 20\n1 2 3 4 5\n8 40\n5 1 9 22 15 344 92 8","output":"Yes\nYes\n"},{"input":"2\n5 20\n1 2 3 4 5\n8 63\n5 1 9 22 15 344 92 8","output":"Yes\nNo\n"},{"input":"2\n5 20\n1 2 3 4 5\n8 63\n5 7 9 22 15 344 92 8","output":"Yes\nYes\n"},{"input":"2\n5 25\n1 2 3 4 5\n8 63\n5 7 9 22 15 344 92 8","output":"No\nYes\n"}]
