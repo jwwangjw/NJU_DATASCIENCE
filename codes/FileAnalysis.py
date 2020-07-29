@@ -82,7 +82,7 @@ for m in range(len(result)):
             n = len(records) - 1
             if n>=1:
                 while n >= 0:
-                    if (records[n]["score"] <= records[n - 1]["score"])and records[n-2]["score"]==100:
+                    if records[n+1]-records[n]==100/len(data_testCase):
                         flag = False
                     n=n-1
                 Tf.append(flag)

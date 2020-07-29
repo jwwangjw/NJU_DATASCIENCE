@@ -4,27 +4,27 @@ import os
 import sys
 import pandas as pd
 import time
-from pyecharts.charts import Line,Bar,Pie
+from pyecharts.charts import Line, Bar, Pie,WordCloud
 from pyecharts import options as opts
+import collections
 
 import os
 
 
 def all_path(dirname):
-
-    result = []#所有的文件
+    result = []  # 所有的文件
 
     for maindir, subdir, file_name_list in os.walk(dirname):
 
         for filename in file_name_list:
-            apath = os.path.join(maindir, filename)#合并成一个完整路径
+            apath = os.path.join(maindir, filename)  # 合并成一个完整路径
             result.append(apath)
 
     return result
 
 
 def file_name(file_dir):
-    L=[]
+    L = []
     for root, dirs, files in os.walk(file_dir):
         for file in files:
             if os.path.splitext(file)[1] == '.png':
@@ -38,83 +38,121 @@ f = open('test_data.json', encoding='utf-8')
 res = f.read()
 
 data = json.loads(res)
-list1=file_name("C:/Users/lenovo/Desktop/录屏&截图/面向用例")
-profile=all_path("C:/Users/lenovo/PycharmProjects/codeReview")
-S=[]
+list1 = file_name("C:/Users/lenovo/Desktop/录屏&截图/面向用例")
+profile = all_path("C:/Users/lenovo/PycharmProjects/codeReview")
+S = []
 for i in range(len(profile)):
-    str1=profile[i].split('/')
-    str2=str1[4].split('\\')
-    if(len(str2)>2):
-        if(str2[1][0].isnumeric()):
+    str1 = profile[i].split('/')
+    str2 = str1[4].split('\\')
+    if (len(str2) > 2):
+        if (str2[1][0].isnumeric()):
             S.append(str2[1])
-M=[]
-RES=[]
-count1=0
-for i in range(len(S)-1):
-    if(S[i]==S[i+1]):
-        S[i]=str(0)
+M = []
+RES = []
+count1 = 0
+for i in range(len(S) - 1):
+    if (S[i] == S[i + 1]):
+        S[i] = str(0)
 for i in range(len(S)):
-    M=S[i].split('_')
-    if(len(M))==3:
+    M = S[i].split('_')
+    if (len(M)) == 3:
         RES.append(M)
-name=[]
+name = []
 for i in range(len(list1)):
-    list2=list1[i].split('/')
-    list3=list2[5].split('\\')
-    list4=list3[1].split('.')
-    list5=list4[0].split('_')
+    list2 = list1[i].split('/')
+    list3 = list2[5].split('\\')
+    list4 = list3[1].split('.')
+    list5 = list4[0].split('_')
     name.append(list5)
-res1=['60602', '60606', '60611', '60621', '60625', '60625', '60644', '60644', '60649', '60649', '60651', '60658', '60658', '60667', '60667', '60688', '60688', '60696', '60703', '60703', '60705', '60705', '60716', '60716', '60731', '60731', '60738', '60738', '60758', '60791', '60791', '60793', '60828', '60833', '60839', '60839', '61048', '61519', '8246', '8317', '8318']
-res2=['2912', '2151', '2717', '2175', '2343', '2717', '2343', '2717', '2343', '2717', '2912', '2175', '2912', '2343', '2717', '2175', '2912', '2151', '2175', '2912', '2672', '2717', '2175', '2912', '2343', '2717', '2175', '2912', '2717', '2343', '2717', '2717', '2912', '2151', '2343', '2717', '2717', '2912', '2717', '2717', '2717']
-ifs=[1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 1, 4, 1, 1, 4, 1, 2, 1, 4, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-ps=[100, 100 , 100, 100, 100, 100, 100, 100, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 50.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0]
+res1 = ['60602', '60606', '60611', '60621', '60625', '60625', '60644', '60644', '60649', '60649', '60651', '60658',
+        '60658', '60667', '60667', '60688', '60688', '60696', '60703', '60703', '60705', '60705', '60716', '60716',
+        '60731', '60731', '60738', '60738', '60758', '60791', '60791', '60793', '60828', '60833', '60839', '60839',
+        '61048', '61519', '8246', '8317', '8318']
+res2 = ['2912', '2151', '2717', '2175', '2343', '2717', '2343', '2717', '2343', '2717', '2912', '2175', '2912', '2343',
+        '2717', '2175', '2912', '2151', '2175', '2912', '2672', '2717', '2175', '2912', '2343', '2717', '2175', '2912',
+        '2717', '2343', '2717', '2717', '2912', '2151', '2343', '2717', '2717', '2912', '2717', '2717', '2717']
+ifs = [1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 1, 4, 1, 1, 4, 1, 2, 1, 4, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+       1, 1, 1]
+ps = [100, 100, 100, 100, 100, 100, 100, 100, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0,
+      100.0, 100.0, 50.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0,
+      100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0]
 for i in range(len(res1)):
-    list5=[]
+    list5 = []
     list5.append(res1[i])
     list5.append(res2[i])
     name.append(list5)
-result=[]
+result = []
 for i in range(len(res1)):
-    result.append(res1[i]+"_"+res2[i])
+    result.append(res1[i] + "_" + res2[i])
 for i in range(len(ps)):
-    ps[i]=ps[i]/100
-uploads_nums=[]
-case_nums=[]
+    ps[i] = ps[i] / 100
+uploads_nums = []
+case_nums = []
+cost = []
+name_cost=[]
+ciyun=[]
 for i in range(len(name)):
-    cases=data[name[i][0]]["cases"]
-    m=0
+    cases = data[name[i][0]]["cases"]
+    m = 0
+    cost_time = 0
     for case in cases:
-        if case["case_id"]==name[i][1]:
-            scores=[]
-            nums=[]
-            times=[]
-            time_res=[]
-            records=case["upload_records"]
-            if i<16:
+        if case["case_id"] == name[i][1]:
+            scores = []
+            nums = []
+            times = []
+            time_res = []
+            str_t=case["case_zip"]
+            l_t=str_t.split('/')
+            str_t=l_t[4]
+            lis=str_t.split('_')
+            ciyun.append(lis[0])
+            records = case["upload_records"]
+            if i < 16:
                 uploads_nums.append(len(records))
             for record in records:
                 scores.append(record["score"])
                 times.append(record["upload_time"])
-
             for n in range(len(times)):
                 timeStamp = int(str(times[n])[:-3])
                 timeArray = time.localtime(timeStamp)
                 otherStyleTime = time.strftime("%Y--%m--%d %H:%M:%S", timeArray)
                 time_res.append(otherStyleTime)
             for j in range(len(scores)):
-                ost=(str(time_res[j])[6:].replace('--','-'))
-                temp_list=ost.split(' ')
-                t_l=temp_list[0].split('-')
-                if(t_l[0][0]=='0'):
-                    t_l[0]=t_l[0].replace('0','')
-                nums.append('第'+str(j+1)+'次:'+t_l[0]+"-"+t_l[1]+" "+temp_list[1][:-3])
-            print(nums)
+                ost = (str(time_res[j])[6:].replace('--', '-'))
+                temp_list = ost.split(' ')
+                t_l = temp_list[0].split('-')
+                if (t_l[0][0] == '0'):
+                    t_l[0] = t_l[0].replace('0', '')
+                nums.append(t_l[0] + "-" + t_l[1] + " " + temp_list[1][:-3])
+            length = len(nums)
+            cs = []
+
+            for u in range(len(nums)):
+                t = nums[u].split(' ')
+                q = t[0].split('-')
+                qs = []
+                p = t[1].split(':')
+                qs.append(q[0])
+                qs.append(q[1])
+                qs.append(p[0])
+                qs.append(p[1])
+                cs.append(qs)
+
+            leng = len(cs)
+            if leng>1:
+                for u in range(len(cs) - 1):
+                    if ((cs[u + 1][1] == cs[u][1]) and (cs[u + 1][0] == cs[u + 1][0])):
+                        cost_time = cost_time + int(cs[u + 1][3]) - int(cs[u][3]) + (int(cs[u + 1][2]) - int(cs[u][2])) * 60
+                    else:
+                        continue
+            else:
+                cost_time=30
             line = (
                 Line()
                     .add_xaxis(xaxis_data=nums)
                     .add_yaxis(
                     series_name="分数",
-                    y_axis= scores,
+                    y_axis=scores,
                     label_opts=opts.LabelOpts(is_show=True),
                 )
                     .set_global_opts(
@@ -134,56 +172,92 @@ for i in range(len(name)):
                         splitline_opts=opts.SplitLineOpts(is_show=True),
                     )
                 ))
-            line.render(name[i][0]+'_'+name[i][1]+'.html')
-            m=m+1
-for i in range(len(S)-1):
-    if(S[i]==S[i+1]):
-        S[i]=str(0)
-named=[]
+            line.render(name[i][0] + '_' + name[i][1] + '.html')
+            m = m + 1
+    if(cost_time==0):
+        cost_time=30
+    cost.append(cost_time)
+    name_cost.append(name[i][0])
+ciyun.sort()
+c=collections.Counter(ciyun)
+d=dict(c)
+list_name=list(d.keys())
+cou=[]
+for i in range(len(list_name)):
+    cou.append(d[list_name[i]])
+words=[]
+for i in range(len(list_name)):
+    tup=(list_name[i],cou[i])
+    words.append(tup)
+c = (
+    WordCloud()
+    .add(
+        "",
+        words,
+        word_size_range=[20, 100],
+    )
+    .set_global_opts(title_opts=opts.TitleOpts(title="有面向用例情况的题目"))
+    .render("wordcloud_custom_font_style.html")
+)
+bar2 = (Bar()
+        .add_xaxis(name_cost)
+        .add_yaxis('完成题目使用时间', cost)
+        .set_global_opts(title_opts=opts.TitleOpts(title="完成题目所用时间"),
+                         xaxis_opts=opts.AxisOpts(name="所用时间"),
+                         yaxis_opts=opts.AxisOpts(name="User_ID"))
+        .set_series_opts(label_opts=opts.LabelOpts(is_show=False))
+        .reversal_axis()
+        )
+bar2.render("barcost.html")
+for i in range(len(S) - 1):
+    if (S[i] == S[i + 1]):
+        S[i] = str(0)
+named = []
 for i in range(len(name)):
     for j in range(len(RES)):
-        if (RES[j][0]==name[i][0])and(RES[j][1]==name[i][1]):
-            named.append(RES[j][0]+'_'+RES[j][1])
-            file = open(RES[j][0]+'_'+RES[j][1]+'_'+RES[j][2] + '/.mooctest' + '/testCases.json', encoding='utf-8')
+        if (RES[j][0] == name[i][0]) and (RES[j][1] == name[i][1]):
+            named.append(RES[j][0] + '_' + RES[j][1])
+            file = open(RES[j][0] + '_' + RES[j][1] + '_' + RES[j][2] + '/.mooctest' + '/testCases.json',
+                        encoding='utf-8')
             fi = file.read()
             data_testCase = json.loads(fi)
             case_nums.append(len(data_testCase))
-bar1=(Bar()
-       .add_xaxis(named)
-       .add_yaxis('面向用例样本的提交次数',uploads_nums)
-       .add_yaxis('样本所属case的用例数',case_nums)
-       .set_global_opts(title_opts=opts.TitleOpts(title="提交次数与用例数"))
-       .set_series_opts(label_opts=opts.LabelOpts(is_show=False))
-       .reversal_axis()
-)
+bar1 = (Bar()
+        .add_xaxis(named)
+        .add_yaxis('面向用例样本的提交次数', uploads_nums)
+        .add_yaxis('样本所属case的用例数', case_nums)
+        .set_global_opts(title_opts=opts.TitleOpts(title="提交次数与用例数"))
+        .set_series_opts(label_opts=opts.LabelOpts(is_show=False))
+        .reversal_axis()
+        )
 bar1.render("bar_case.html")
-bar=(Bar()
+bar = (Bar()
        .add_xaxis(result)
-       .add_yaxis('if_else数',ifs)
+       .add_yaxis('if_else数', ifs)
        .add_yaxis('print占代码比率', ps)
        .set_global_opts(title_opts=opts.TitleOpts(title="面向用例样本的if_else数以及print率"))
        .set_series_opts(label_opts=opts.LabelOpts(is_show=False))
        .reversal_axis()
-)
+       )
 bar.render("BAR.html")
 
 inner_x_data = ["筛选疑似面向用例", "其他"]
-inner_y_data = [80,691-80]
+inner_y_data = [80, 691 - 80]
 inner_data_pair = [list(z) for z in zip(inner_x_data, inner_y_data)]
 
 outer_x_data = ["面向用例（证实）", "非面向用例", "其他"]
-outer_y_data = [16,80-16,691-80]
+outer_y_data = [16, 80 - 16, 691 - 80]
 outer_data_pair = [list(z) for z in zip(outer_x_data, outer_y_data)]
 
 (
     Pie(init_opts=opts.InitOpts(width="800px", height="500px"))
-    .add(
+        .add(
         series_name="总体",
         data_pair=inner_data_pair,
         radius=[0, "30%"],
         label_opts=opts.LabelOpts(position="inner"),
     )
-    .add(
+        .add(
         series_name="是否面向用例",
         radius=["40%", "55%"],
         data_pair=outer_data_pair,
@@ -219,11 +293,12 @@ outer_data_pair = [list(z) for z in zip(outer_x_data, outer_y_data)]
             },
         ),
     )
-    .set_global_opts(legend_opts=opts.LegendOpts(pos_left="right", orient="vertical"),title_opts=opts.TitleOpts(title="面向用例比例"))
-    .set_series_opts(
+        .set_global_opts(legend_opts=opts.LegendOpts(pos_left="right", orient="vertical"),
+                         title_opts=opts.TitleOpts(title="面向用例比例"))
+        .set_series_opts(
         tooltip_opts=opts.TooltipOpts(
             trigger="item", formatter="{a} <br/>{b}: {c} ({d}%)"
         )
     )
-    .render("nested_pies.html")
+        .render("nested_pies.html")
 )
